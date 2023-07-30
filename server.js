@@ -4,6 +4,7 @@ const path = require('path')
 const app = express()
 const {v4:uuidv4} = require('uuid')
 const PORT = process.env.PORT||3001
+var mongoose = require('mongoose');
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(express.static('public'))
