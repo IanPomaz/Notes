@@ -4,11 +4,11 @@ const path = require('path')
 const app = express()
 const {v4:uuidv4} = require('uuid')
 const PORT = process.env.PORT||3001
-var mongoose = require('mongoose');
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(express.static('public'))
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/cluster0');
+
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/your-database-name');
 
 app.get('/', (rec,res)=>{
     res.sendFile(path.join(__dirname,"/public/index.html"))
