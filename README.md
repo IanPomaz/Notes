@@ -88,6 +88,7 @@ Key features of the Note Taker application include:
 ## Demo <a name="Demo"></a>
 
 
+https://github.com/IanPomaz/Notes/assets/128009980/99e07c57-f493-4630-a2bd-0883689d23d7
 
 
 
